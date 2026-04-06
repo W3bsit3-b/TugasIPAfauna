@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fauna Bali Lengkap</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background: linear-gradient(160deg,#1e3c72,#2a5298,#1e3c72);
+  background-size:200% 200%;
+  animation:bgMove 8s infinite;
+  color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+header{text-align:center;padding:40px}
+
+.page{display:none;padding:20px;max-width:900px;margin:auto;animation:fade .5s}
+.active{display:block}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.menu{display:flex;flex-direction:column;gap:15px}
+
+.option{
+padding:20px;border-radius:15px;border:none;
+background:rgba(255,255,255,0.15);
+color:white;cursor:pointer;transition:.3s;
+}
+
+.option:hover{transform:scale(1.05)}
+.option:active{transform:scale(1.1)}
+
+.back{
+margin-bottom:15px;padding:10px;
+border:none;border-radius:10px;
+background:rgba(0,0,0,0.3);color:white;
+}
+
+h2{margin-top:20px}
+p{margin-top:10px;line-height:1.7}
+ul{margin-left:20px;margin-top:10px}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+<h1>Fauna Endemik & Khas Bali</h1>
+<p>Informasi Ilmiah Lengkap</p>
+</header>
+
+<div id="home" class="page active">
+<div class="menu">
+<button class="option" onclick="showPage('jalak')">🐦 Jalak Bali</button>
+<button class="option" onclick="showPage('kintamani')">🐕 Anjing Kintamani</button>
+<button class="option" onclick="showPage('rusa')">🦌 Rusa Timor</button>
+<button class="option" onclick="showPage('lutung')">🐒 Lutung Jawa</button>
+</div>
+</div>
+
+<!-- JALAK -->
+<div id="jalak" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Jalak Bali</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Leucopsar rothschildi</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Animalia<br>
+Filum: Chordata<br>
+Kelas: Aves<br>
+Ordo: Passeriformes<br>
+Famili: Sturnidae<br>
+Genus: Leucopsar<br>
+Spesies: L. rothschildi
+</p>
+
+<h2>Deskripsi Lengkap</h2>
+<p>
+Jalak Bali merupakan burung endemik yang hanya ditemukan di Pulau Bali, khususnya di Taman Nasional Bali Barat. Burung ini dikenal karena keindahan bulunya yang putih bersih serta lingkar mata biru yang mencolok. Jalak Bali menjadi simbol pelestarian satwa di Indonesia karena populasinya yang sangat terbatas.
+</p>
+
+<h2>Ciri Fisik</h2>
+<ul>
+<li>Bulu dominan putih dengan ujung sayap hitam</li>
+<li>Lingkar mata biru tanpa bulu</li>
+<li>Jambul khas di kepala</li>
+</ul>
+
+<h2>Habitat & Persebaran</h2>
+<p>
+Hidup di hutan kering, savana, dan semak belukar di Bali Barat. Persebarannya sangat terbatas dan tidak ditemukan secara alami di luar Bali.
+</p>
+
+<h2>Pola Makan</h2>
+<p>
+Omnivora: memakan serangga, buah, biji-bijian, dan nektar.
+</p>
+
+<h2>Perkembangbiakan</h2>
+<p>
+Bertelur 2–3 butir, masa inkubasi sekitar 14–15 hari, biasanya bersarang di lubang pohon.
+</p>
+
+<h2>Ancaman</h2>
+<ul>
+<li>Perburuan ilegal</li>
+<li>Kehilangan habitat</li>
+</ul>
+
+<h2>Upaya Pelestarian</h2>
+<p>
+Dilakukan melalui penangkaran, pelepasliaran, serta perlindungan ketat oleh pemerintah.
+</p>
+</div>
+
+<!-- KINTAMANI -->
+<div id="kintamani" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Anjing Kintamani</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Canis lupus familiaris</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Animalia<br>
+Filum: Chordata<br>
+Kelas: Mammalia<br>
+Ordo: Carnivora<br>
+Famili: Canidae<br>
+Genus: Canis
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Anjing Kintamani adalah ras anjing asli Bali yang berasal dari daerah pegunungan Kintamani. Ras ini telah diakui secara internasional dan memiliki karakteristik unik yang membedakannya dari ras lain.
+</p>
+
+<h2>Ciri Fisik</h2>
+<ul>
+<li>Bulu tebal dan panjang</li>
+<li>Telinga tegak</li>
+<li>Ekor melengkung ke atas</li>
+</ul>
+
+<h2>Perilaku</h2>
+<p>
+Setia, cerdas, dan mudah dilatih. Sangat cocok sebagai penjaga rumah.
+</p>
+
+<h2>Habitat</h2>
+<p>
+Lingkungan pegunungan dan permukiman manusia.
+</p>
+</div>
+
+<!-- RUSA -->
+<div id="rusa" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Rusa Timor</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Cervus timorensis</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Animalia<br>
+Kelas: Mammalia<br>
+Famili: Cervidae
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Rusa Timor adalah mamalia herbivora yang hidup di kawasan savana Bali Barat.
+</p>
+
+<h2>Pola Makan</h2>
+<p>
+Memakan rumput, daun, dan tumbuhan kecil.
+</p>
+
+<h2>Peran Ekologi</h2>
+<p>
+Menjaga keseimbangan vegetasi.
+</p>
+</div>
+
+<!-- LUTUNG -->
+<div id="lutung" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Lutung Jawa</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Trachypithecus auratus</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Animalia<br>
+Kelas: Mammalia<br>
+Famili: Cercopithecidae
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Primata arboreal yang hidup di pepohonan dan aktif pada siang hari.
+</p>
+
+<h2>Pola Makan</h2>
+<p>
+Daun, buah, dan bunga.
+</p>
+</div>
+
+<script>
+function showPage(p){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById(p).classList.add('active');
+document.getElementById('header').style.display='none';
+}
+function backHome(){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById('home').classList.add('active');
+document.getElementById('header').style.display='block';
+}
+</script>
+
+</body>
+</html>
